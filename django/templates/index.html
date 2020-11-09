@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+
+{% block title %}My website{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+                <img src="https://c.dlnws.com/image/upload/f_auto,q_auto/v1574811242/blog/70%20Off%20Sales%20Promotion%20on%20Retail%20Shop%20Display%20Window.jpg" style="width:100%;height:562px;" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>welcome to my website</h3>
+            <p>Thank you to visiting my website. Here you can shop many products.</p>
+          
+        </div>
+        </div>
+        <div class="carousel-item">
+              <img src="/static/pic.jpg" style="width:100%;height:562px;" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/static/photo.jpg" style="width:100%;height:562px; "alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+        </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a> 
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+</div>
+
+
+<div class="container my-3">
+<h1 class="my-4 text-center">Select your product</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+        <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+            
+            <div class="card-body">
+            <div class="btn-group">
+                  <h3> Oneplus 7 pro </h3>            
+                  
+                
+                </div>
+              <p class="card-text">The OnePlus 7 Pro is ideal for the technology geek in you. It's 16.94 cm (6.67) QHD+ AMOLED display comes equipped with the HDR10+ technology, which delivers an immersive visual experience. Additionally, the 48 MP+ 8 MP+ 16MP rear camera and wide-angle lens allow you to click sharp and clear pictures. Furthermore, the Warp Charge technology by OnePlus charges the 4000 mAh battery within 20 minutes.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                       
+                  <a button type="button" class="btn btn-primary" href="/cart" >Buy Now</a>
+                
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+          <div class="btn-group">
+              
+                
+                
+              </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjnSeVXG4eU-ObAMa6lDw2nskhXrr3tH-ZGjuRtdpYXMW0BWLcByBE8Wzihz-vpRioTzet9wg&usqp=CAc" class="d-block w-100" alt="...">
+            <div class="card-body">
+            <h3>Realme 3 pro</h3>
+              <p class="card-text">Realme 3 Pro smartphone has a IPS LCD display. It measures 156.8 mm x 74.2 mm x 8.3 mm and weighs 172 grams. The screen has a resolution of 1080 x 2340 pixels and 409 ppi pixel density. It has an aspect ratio of 19.5:9 and screen-to-body ratio of 83.56 %. On camera front, the buyers get a 25 MP f/2.0 Primary Camera(2.8" sensor size, 1.8µm pixel size) and on the rear, there's an 16 MP + 5 MP camera with features like 2 x Digital Zoom, Auto Flash,  Touch to focus.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                  <a button type="button" class="btn btn-primary" href="/cart" >Buy Now</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+             
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTCrX9bs5auRbRpn8j7Cbcn4K9OXO2ucOaUjrZAuFOlkq6EGq3iUocE_A248VEwWkF9lA_lFmgTXDs&usqp=CAc" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <h3> Mi Notebook 14 </h3>
+              <p class="card-text">New Surface Laptop 3 fuels your ideas and reflects your style with a thin, light design you can carry all day and choice of colors, keyboard finishes, and sizes — a vibrant 13.5” or new 15” touchscreen.
+              Colors available on and  selected models only. Available colors vary by store, market, and configuration.Make a powerful statement with new Surface Laptop .Memory : 8GB DDR4-2666MHz RAM and  Storage: 256 GB SSD</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                  <a button type="button" class="btn btn-primary" href="/cart" >Buy Now</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+          <div class="btn-group">
+              
+                
+                
+              </div>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS4S7iXMT03gMNV8YkWZfv7Dnxgji4vg4TJO8I_LYJund3xspF36O55L6FIOf1z&usqp=CAc"class="d-block w-100" alt="...">
+            <div class="card-body">
+            <h3>Earphone</h3>
+              <p class="card-text">Realme 3 Pro smartphone has a IPS LCD display. It measures 156.8 mm x 74.2 mm x 8.3 mm and weighs 172 grams. The screen has a resolution of 1080 x 2340 pixels and 409 ppi pixel density. It has an aspect ratio of 19.5:9 and screen-to-body ratio of 83.56 %. On camera front, the buyers get a 25 MP f/2.0 Primary Camera(2.8" sensor size, 1.8µm pixel size) and on the rear, there's an 16 MP + 5 MP camera with features like 2 x Digital Zoom, Auto Flash,  Touch to focus.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                  <a button type="button" class="btn btn-primary" href="/cart" >Buy Now</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+ <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+          <div class="btn-group">
+              
+                
+                
+              </div>
+            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+            <div class="card-body">
+            <h3>Mi Note 9</h3>
+              <p class="card-text">Realme 3 Pro smartphone has a IPS LCD display. It measures 156.8 mm x 74.2 mm x 8.3 mm and weighs 172 grams. The screen has a resolution of 1080 x 2340 pixels and 409 ppi pixel density. It has an aspect ratio of 19.5:9 and screen-to-body ratio of 83.56 %. On camera front, the buyers get a 25 MP f/2.0 Primary Camera(2.8" sensor size, 1.8µm pixel size) and on the rear, there's an 16 MP + 5 MP camera with features like 2 x Digital Zoom, Auto Flash,  Touch to focus.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                  <a button type="button" class="btn btn-primary"  href="/cart">Buy Now</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+           <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSbPyXFG3RnRScrvtif8JVtztyc9M8KCZPRuc95qJUCA1arzgZmTzYHetRyXRl0mRjSxNGGNwaM7hY&usqp=CAc" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">A laptop computer is smaller than a desktop computer, generally less than three inches thick, and weigh less than desktop computers. The laptop's size makes it convenient for transportation in briefcases, backpacks, and other bags.
+
+The device derives its name from being able to be used by resting on a person's lap without the need for a desk,other surface. May also be referred to as notebook computers, though a notebook computer usually describes a computer that is smaller and lighter than a laptop computer.  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a button type="button" class="btn btn-primary"  href="/cart">Buy</a>
+                 
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+{% endblock body %}
